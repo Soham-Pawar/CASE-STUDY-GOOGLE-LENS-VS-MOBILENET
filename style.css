@@ -1,0 +1,171 @@
+body{
+    text-align: center;
+    align-items: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+background-image: linear-gradient(to right, yellow,aqua);
+
+}
+
+h1{
+color:red;
+}
+
+.img2{
+height:220px;
+width:10000px;
+margin-top: 10px;
+}
+
+.img3{
+    height:220px;
+    width:280px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.img4{
+    height:220px;
+    width:10000px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.img5{
+    height:220px;
+    width:10000px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.img6{
+    height:220px;
+    width:200px;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.test_image_and_result2{
+    background-color: hsl(0, 0%, 50%);
+    border-radius: 25px;
+    height: 280px;
+    width: 850px;
+    margin-left: 150px;
+    margin-top: 50px;
+    padding: 0px;
+}
+
+.test_image_and_result3{
+    background-color: hsl(0, 0%, 50%);
+    border-radius: 25px;
+    height: 280px;
+    width: 850px;
+    margin-left: 150px;
+    margin-top: 50px;
+    padding: 0px;
+}
+
+.test_image_and_result4{
+    background-color: hsl(0, 0%, 50%);
+    border-radius: 25px;
+    height: 280px;
+    width: 850px;
+    margin-left: 150px;
+    margin-top: 50px;
+    padding: 0px;
+}
+
+.test_image_and_result5{
+    background-color: hsl(0, 0%, 50%);
+    border-radius: 25px;
+    height: 280px;
+    width: 850px;
+    margin-left: 150px;
+    margin-top: 50px;
+    padding: 0px;
+}
+
+.test_image_and_result6{
+    background-color: hsl(0, 0%, 50%);
+    border-radius: 25px;
+    height: 280px;
+    width: 850px;
+    margin-left: 150px;
+    margin-top: 50px;
+    padding: 0px;
+}
+
+.test_image_and_result{
+background-color: hsl(0, 0%, 50%);
+border-radius: 25px;
+height: 280px;
+width: 850px;
+margin-left: 150px;
+margin-top: 50px;
+padding: 0px;
+}
+
+
+h3{
+margin-right: 280px;
+}
+
+cv{
+color: red;
+font-weight: bold;
+}
+
+#color{
+color: red;
+}
+
+#press{
+border-radius: 15px;
+}
+
+.img{
+height:240px;
+margin-top: 5px;
+}
+
+#imd{
+width: 100px;
+height: 100px;
+margin-top: -70px;
+}
+
+.mini_result{
+color: white;
+font-weight: bold;
+}
+
+.bn{
+color: white;
+}
+
+.kl{
+color: purple;
+}
+
+hr{
+width: 400px;
+}
+
+.bold{
+color: indigo;
+font-weight: bolder;
+}
+
+.div-End{
+    background-color: pink;
+    border-radius: 15px;
+    height: 110px;
+    width: 750px;
+    margin-top: 30px;
+    margin-left: 245px;
+    text-align: center;
+    border-color: black;
+    border-style:dotted;
+    color: black;
+    font-weight: 600;
+    box-shadow: 10px 10px 10px gray;
+}

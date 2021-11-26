@@ -1,0 +1,181 @@
+<html>
+<head>
+  <title>Real Time Image Identification App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+<div class="container">
+<h1>CASE STUDY BETWEEN GOOGLE LENS AND MOBILE NET</h1>
+<br>
+<h3>GOOGLE LENS</h3>
+<img id="imd" src="lense-removebg-preview.png" class="image-responsive"/>
+<br><br>
+<h4 id="color">VS</h4>
+<br>
+<button id="press" type="button" class="btn btn-primary">MOBILENET</button>
+<ol id="ok">
+   <div class="test_image_and_result col-xs-12">
+       <li class="col-sm-4 col-xs-12">
+           <b>Test Image</b>
+           <img src="Astronaut.jpg" class="img-responsive img"/>
+      </li>
+      
+        <b class="col-sm-4 col-xs-12 bn">
+          <b>Output on <b class="kl">GOOGLE LENS</b> - 
+          <span class="cv">Astronaut</span> </b>
+        </b>
+        <br>
+        <b class="col-sm-4 col-xs-12 bn">
+          O<b>utput on <b class="kl">MOBILENET MODEL</b> - 
+          <span class="cv">Man</span> </b>
+        </b>
+        
+          <div class="mini_result" class="col-xs-12"> 
+            <h4>Result - </h4>
+            <hr>
+            <h4>GOOGLE LENS Is More Accurate</h4> 
+          </div>
+        </div>
+
+        <div class="test_image_and_result2 col-xs-12">
+    <li class="col-sm-4 col-xs-12">
+          <b>Test Image</b>
+          <img src="Map.gif" class="img-responsive img2"/>
+    
+     </li>
+
+       <b class="col-sm-4 col-xs-12 bn">
+         <b>Output on <b class="kl">GOOGLE LENS</b> - 
+         <span class="cv">Map</span> </b>
+       </b>
+       <br>
+       <b class="col-sm-4 col-xs-12 bn">
+         <b>Output on <b class="kl">MOBILENET MODEL</b> - 
+         <span class="cv">Globe,Paper,Art</span> </b>
+       </b>
+       
+         <div class="mini_result" class="col-xs-12"> 
+           <h4>Result - </h4>
+           <hr>
+           <h4>GOOGLE LENS Is More Accurate</h4> 
+         </div>
+         </div>
+
+         <div class="test_image_and_result3 col-xs-12">
+          <li class="col-sm-4 col-xs-12">
+                <b>Test Image</b>
+                <img src="Watch.png" class="img-responsive img3"/>
+          
+           </li>
+      
+             <b class="col-sm-4 col-xs-12 bn">
+               <b>Output on <b class="kl">GOOGLE LENS</b> - 
+               <span class="cv">Watch</span> </b>
+             </b>
+             <br>
+             <b class="col-sm-4 col-xs-12 bn">
+               <b>Output on <b class="kl">MOBILENET MODEL</b> - 
+               <span class="cv">TV,Car</span> </b>
+             </b>
+             
+               <div class="mini_result" class="col-xs-12"> 
+                 <h4>Result - </h4>
+                 <hr>
+                 <h4>GOOGLE LENS Is More Accurate</h4> 
+               </div>
+               </div>
+
+               <div class="test_image_and_result4 col-xs-12">
+                <li class="col-sm-4 col-xs-12">
+                      <b>Test Image</b>
+                      <img src="Shoes.png" class="img-responsive img4"/>
+                
+                 </li>
+            
+                   <b class="col-sm-4 col-xs-12 bn">
+                     <b>Output on <b class="kl">GOOGLE LENS</b> - 
+                     <span class="cv">Feet</span> </b>
+                   </b>
+                   <br>
+                   <b class="col-sm-4 col-xs-12 bn">
+                     <b>Output on <b class="kl">MOBILENET MODEL</b> - 
+                     <span class="cv">Running shoes</span> </b>
+                   </b>
+                   
+                     <div class="mini_result" class="col-xs-12"> 
+                       <h4>Result - </h4>
+                       <hr>
+                       <h4>MOBILENET Is More Accurate</h4> 
+                     </div>
+                     </div>
+
+                     <div class="test_image_and_result5 col-xs-12">
+                      <li class="col-sm-4 col-xs-12">
+                            <b>Test Image</b>
+                            <img src="Pen.png" class="img-responsive img5"/>
+                      
+                       </li>
+                  
+                         <b class="col-sm-4 col-xs-12 bn">
+                           <b>Output on <b class="kl">GOOGLE LENS</b> - 
+                           <span class="cv">Pen</span> </b>
+                         </b>
+                         <br>
+                         <b class="col-sm-4 col-xs-12 bn">
+                           <b>Output on <b class="kl">MOBILENET MODEL</b> - 
+                           <span class="cv">Stylus</span> </b>
+                         </b>
+                         
+                           <div class="mini_result" class="col-xs-12"> 
+                             <h4>Result - </h4>
+                             <hr>
+                             <h4>GOOGLE LENS Is More Accurate</h4> 
+                           </div>
+                           </div>
+
+                           <div class="test_image_and_result6 col-xs-12">
+                            <li class="col-sm-4 col-xs-12">
+                                  <b>Test Image</b>
+                                  <img src="Into the Wild.jfif" class="img-responsive img6"/>
+                            
+                             </li>
+                        
+                               <b class="col-sm-4 col-xs-12 bn">
+                                 <b>Output on <b class="kl">GOOGLE LENS</b> - 
+                                 <span class="cv">Book</span> </b>
+                               </b>
+                               <br>
+                               <b class="col-sm-4 col-xs-12 bn">
+                                 <b>Output on <b class="kl">MOBILENET MODEL</b> - 
+                                 <span class="cv">Photo,X-ray</span> </b>
+                               </b>
+
+ <div class="mini_result" class="col-xs-12"> 
+  <h4>Result - </h4>
+   <hr>
+   <h4>GOOGLE LENS Is More Accurate</h4> 
+</div>
+</div>
+</ol>
+
+<div class="div-End col-xs-12">
+<br>
+I have tested 6 images
+<br>
+<b class="bold">GOOGLE LENS</b> have predicted 5 of them more Accurately. And <b class="bold">MOBILENET</b> was less accurate.
+<br>
+So according to my case study <b class="bold">GOOGLE LENS</b> is more accurately.
+<br><br>
+<p>...</p>
+</div>
+</div>
+</body>
+</html>
